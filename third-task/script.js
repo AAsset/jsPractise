@@ -24,21 +24,21 @@ function mounthlyExpenses() {
     }
 }
 
-for(let i = 0; i < 2; i++) {
-    this.mounthlyExpenses();
-}
-
-// let k = 0;
-// while(k < 2) {
+// for(let i = 0; i < 2; i++) {
 //     this.mounthlyExpenses();
-//     k++;
 // }
 
-// let j = 0;
+// let i = 0;
+// while(i < 2) {
+//     this.mounthlyExpenses();
+//     i++;
+// }
+
+// let i = 0;
 // do {
 //     this.mounthlyExpenses();
-//     j++;
-// } while(j < 2);
+//     i++;
+// } while(i < 2);
 
 appData.moneyPerDay = appData.budget / 30;
 
