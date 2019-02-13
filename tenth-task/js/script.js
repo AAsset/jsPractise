@@ -120,4 +120,26 @@ window.addEventListener('DOMContentLoaded', function() {
 	// function showUser(surname, name) {
 	// 	alert("Пользователь " + surname + " " + name + ", его возраст " + this.value);
     // }
+
+    // ES6 classes
+
+    class Options {
+        constructor(height, width, bg, fontSize, textAlign) {
+            this.height = height;
+            this.width = width;
+            this.bg = bg;
+            this.fontSize = fontSize;
+            this.textAlign = textAlign;
+        }
+        createDOMElement() {
+            const element = document.createElement('div');
+            const timer = document.querySelector('.timer');
+            timer.appendChild(element);
+            let param = `height:${this.height}px; width:${this.width}px; background-color:${this.bg}; font-size:${this.fontSize}px; text-align:${this.textAlign}`;
+            element.style.cssText = param;
+        };
+    }
+
+    const objOptions = new Options(30, 100, 'red', 18, 'center');
+    objOptions.createDOMElement();
 });
